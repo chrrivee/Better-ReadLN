@@ -31,8 +31,13 @@ Functions like getLength, plusStr etc. are inbuilt...
 you have the choice to save the orignal input this can be usefull if you just want to check inputs Length using the getLength function inbuilt...
 
 
+![image](https://user-images.githubusercontent.com/86614978/162564060-5a43e04b-0b45-4657-86dc-d16c8296d15a.png)
+
+
+***------------NOTE!------------***
+
 there are many more work in progress..!
 
 ***THIS PROJECT IS STILL IN DEV. THE JAVA FILE IS IN src/main/kotlin/main.kt***
 
-An install will be published soon! :)
+An installer will be published soon! :)

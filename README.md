@@ -28,7 +28,7 @@ Functions like getLength, plusStr etc. are inbuilt...
 
 **Option To Save Orignal Input!**:
 
-you have the choice to save the orignal input this can be usefull if you just want to check inputs Length using the getLength function inbuilt...
+you have the choice to save the orignal input this can be usefull if you just want to check inputs Length using the  inbuilt getLength function.
 
 
 ![image](https://user-images.githubusercontent.com/86614978/162564060-5a43e04b-0b45-4657-86dc-d16c8296d15a.png)

@@ -40,7 +40,7 @@
 
 
 |- Finsihed >  convertTo Function.
--
+.
 |- Added >  a better way to catch exceptions also commented the code!
 
 

@@ -12,7 +12,7 @@
  
  -| Removed > readLineINT from the ReadLine Global File.
  
- -| Removed > ReadLine Global Diffrent Files for faster build times.
+ -| Removed > ReadLine Global. Diffrent Files for faster build times.
  
  --------------------------------------------------------------
  
@@ -20,5 +20,14 @@
  
  
  -------------------------------------------
- ***COMITED INSTALLER.md TO GIT***
+
   
+***CHANGELOGS DEV 0.2.5:***
+
+|- Finsihed >  convertTo Function
+|- Added >  a better way to catch exceptions also commented the code!
+
+
+EXTRA:
+
+planned and started the new function.

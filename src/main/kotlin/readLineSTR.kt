@@ -1,5 +1,6 @@
+@file:Suppress("NAME_SHADOWING")
 
-fun _readLineStr(text:String, specialFn:String?, saverOrignalInput:Boolean):Any
+fun _readLineStr(text:String, specialFn:String?, saverOrignalInput:Boolean): Any?
 {
     val varName:String = ""
     val returnArray = arrayOf(1, "")
@@ -28,6 +29,11 @@ fun _readLineStr(text:String, specialFn:String?, saverOrignalInput:Boolean):Any
             return varName.length
         }
     }
+    /*
+        --------------------------------------------------------------
+        GET-LENGTH ENDS && PLUS STR STARTS!
+        --------------------------------------------------------------
+    */
     if(specialFn.equals("plusStr", ignoreCase = true))
     {
         println(text)
@@ -48,8 +54,10 @@ fun _readLineStr(text:String, specialFn:String?, saverOrignalInput:Boolean):Any
         }
     }
     /*
-    Convert to Function | Converts Input to x data type.
-     */
+        --------------------------------------------------------------
+        PLUS-STR ENDS && CONVERT-TO STARTS!
+        --------------------------------------------------------------
+    */
     if(specialFn.equals("convertTo")){
         println(text)
         val varName = readln()
@@ -57,7 +65,7 @@ fun _readLineStr(text:String, specialFn:String?, saverOrignalInput:Boolean):Any
         val dataToChangeTo = readln()
         var finalVarName = 0
         /*
-            Int | Saves Variable in the Int Datatype
+            ConvertTO >int< | changes said input to >int< datatype
         */
         if(dataToChangeTo.equals("int", ignoreCase = true)) {
             try
@@ -87,6 +95,9 @@ fun _readLineStr(text:String, specialFn:String?, saverOrignalInput:Boolean):Any
                 }
             }
         }
+        /*
+        ConvertTO >char< | changes said input to >char< datatype
+        */
         if(dataToChangeTo.equals("char",ignoreCase = true))
         {
             var varNameLen = varName.length
@@ -112,10 +123,87 @@ fun _readLineStr(text:String, specialFn:String?, saverOrignalInput:Boolean):Any
                 }
             }
         }
+        /*
+        ConvertTO >double< | changes said input to >double< datatype
+        */
         if(dataToChangeTo.equals("double",ignoreCase = true))
         {
-            varName.toDouble()
+            try
+            {
+                if(varName.contains(".")){
+                    returnArray[0] = varName.toDouble()
+                    if(saverOrignalInput) {
+                        returnArray[1] = varName
+                        return returnArray.joinToString<Any?>()
+                    }
+                    return varName.toDouble()
+                }
+                else
+                {
+                    println("try using 'int' instead its faster and more efficient!")
+                    returnArray[0] = varName.toDouble()
+                    if(saverOrignalInput) {
+                        returnArray[1] = varName
+                        return returnArray.joinToString<Any?>()
+                    }
+                    return varName.toDouble()
+                }
+            }
+            catch (e: NumberFormatException)
+            {
+                if(varName.contains(" ")){
+                    println("ERROR> decimal value contains a space")
+                }
+                else
+                {
+                    println("NumFormatExp > Said Value contains a non number char.")
+                }
+            }
         }
+    }
+    /*
+        --------------------------------------------------------------
+        CONVERT TO ENDS && ADD IN ARRAY STARTS!
+        --------------------------------------------------------------
+    */
+    if(specialFn.equals("addToArray", ignoreCase = true))
+    {
+        println(" Do you want to make an array with elements given by you?")
+        val makeNew = readln()
+        if(makeNew.equals("true", ignoreCase = true))
+        {
+            println("Choose the type of data type to create array with")
+            val arrayDT = readln()
+            println("give amount of values in array")
+            val elementsInArray = readln()
+
+            /*
+            Creating an array with the DT of int
+            */
+
+            if(arrayDT.equals("int",ignoreCase = true))
+            {
+                try
+                {
+                    val finalArrayElms = elementsInArray.toInt()
+                    val baseArray: IntArray = IntArray(finalArrayElms)
+                    /*
+                    make a for loop for input and blah blah
+                    */
+                }
+                catch (e: NumberFormatException)
+                {
+                    if(elementsInArray.contains(" ")){
+                        println("NumFormExp > the value contains a space and may also contain an alphabet.")
+                    }
+                    else{
+                        println("NumFormExp > the value contains invalid characters(valid char != Alphabets, symbols)")
+                    }
+                }
+
+            }
+        }
+
     }
 
     return varName

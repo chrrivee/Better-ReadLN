@@ -1,4 +1,4 @@
-***CHANGELOGS DEV 0.2:***
+change logs 0.2
 
 
 

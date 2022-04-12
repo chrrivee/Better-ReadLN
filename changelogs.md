@@ -41,6 +41,10 @@
 
 |- Finsihed >  convertTo Function.
 
+
+![image](https://user-images.githubusercontent.com/86614978/163057042-6446159e-bcb2-427e-b10d-38fc7a87af5d.png)
+{1/3 btw}
+
 |- Added >  a better way to catch exceptions also commented the code!
 
 

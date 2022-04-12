@@ -40,7 +40,7 @@
 
 
 |- Finsihed >  convertTo Function.
-.
+
 |- Added >  a better way to catch exceptions also commented the code!
 
 
@@ -50,3 +50,11 @@ planned and started the new function.
 
 
  ------------------------------------------------------------------------------------------------|
+
+
+
+Felix Approved:
+
+![image](https://user-images.githubusercontent.com/86614978/163056466-829fdc7c-8dac-4fae-859d-5a707e9946e9.png)
+
+
